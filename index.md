@@ -1,4 +1,4 @@
 ---
-title: Hello and Welcome to my blog
+title: Joshuas blog
 ---
 
