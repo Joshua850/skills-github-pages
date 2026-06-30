@@ -1,0 +1,9 @@
+# Your contact + social links. Edit these.
+# Leave a value blank ("") to hide that link.
+email: "joshuacox8501@gmail.com"
+phone: "+353 83 883 0754"
+github: "https://github.com/Joshua850"
+linkedin: ""        # <-- ADD your LinkedIn URL, e.g. https://www.linkedin.com/in/your-handle
+location: "Dublin, Ireland"
+availability: "Irish Citizen · EU work authorization, no sponsorship required"
+resume: ""          # e.g. /assets/joshua-cox-cv.pdf  (drop a PDF in assets/)

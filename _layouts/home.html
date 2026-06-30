@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container">
+    <p class="hero__eyebrow">{{ site.data.social.availability | default: site.data.social.location }}</p>
+    <h1 class="hero__title">Hi, I&rsquo;m {{ site.author }}.</h1>
+    <p class="hero__role">{{ site.tagline }}</p>
+    <p class="hero__lead">{{ site.description }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{ '/projects/' | relative_url }}">View my work</a>
+      {% if site.data.social.email and site.data.social.email != "" %}<a class="btn" href="mailto:{{ site.data.social.email }}">Get in touch</a>{% endif %}
+      {% if site.data.social.resume and site.data.social.resume != "" %}<a class="btn" href="{{ site.data.social.resume | relative_url }}">Download CV</a>{% endif %}
+    </div>
+    <div class="hero__social">
+      {% if site.data.social.github and site.data.social.github != "" %}<a href="{{ site.data.social.github }}" target="_blank" rel="noopener">GitHub ↗</a>{% endif %}
+      {% if site.data.social.linkedin and site.data.social.linkedin != "" %}<a href="{{ site.data.social.linkedin }}" target="_blank" rel="noopener">LinkedIn ↗</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2 class="section-title">What I work with</h2>
+  <div class="skills">
+    {% for group in site.data.skills %}
+    <div class="skills__group">
+      <h3 class="skills__heading">{{ group.category }}</h3>
+      <ul class="tag-list">
+        {% for item in group.items %}<li class="tag">{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <h2 class="section-title">Featured projects</h2>
+    <a class="section-link" href="{{ '/projects/' | relative_url }}">All projects →</a>
+  </div>
+  <div class="project-grid">
+    {% for project in site.data.projects %}{% if project.featured %}
+    <article class="project-card">
+      <h3 class="project-card__title">{{ project.name }}</h3>
+      <p class="project-card__desc">{{ project.description }}</p>
+      {% if project.tags %}<ul class="tag-list tag-list--sm">{% for t in project.tags %}<li class="tag">{{ t }}</li>{% endfor %}</ul>{% endif %}
+      {% if project.demo and project.demo != "" %}
+      <div class="project-card__links">
+        <a href="{{ project.demo }}" target="_blank" rel="noopener">Live demo ↗</a>
+      </div>
+      {% endif %}
+    </article>
+    {% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <h2 class="section-title">Recent writing</h2>
+    <a class="section-link" href="{{ '/blog/' | relative_url }}">All posts →</a>
+  </div>
+  <div class="post-list">
+    {% for post in site.posts limit:3 %}
+    <a class="post-row" href="{{ post.url | relative_url }}">
+      <time class="post-row__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <span class="post-row__title">{{ post.title }}</span>
+      <span class="post-row__arrow">→</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container section cta">
+  <h2 class="cta__title">Let&rsquo;s work together</h2>
+  <p class="cta__text">I&rsquo;m open to new opportunities and interesting problems. The fastest way to reach me is by email.</p>
+  {% if site.data.social.email and site.data.social.email != "" %}<a class="btn btn--primary" href="mailto:{{ site.data.social.email }}">{{ site.data.social.email }}</a>{% endif %}
+</section>

@@ -1,0 +1,30 @@
+# Employment history (most recent first).
+
+- role: "Full Stack Software Engineer"
+  company: "Davra"
+  period: "Aug 2024 — Present"
+  location: "Dublin, Ireland"
+  summary: >-
+    Designing, building and deploying production backend services and
+    customer-facing applications for a large-scale IoT platform.
+  highlights:
+    - "Built backend services in TypeScript, Node.js and REST APIs for real-time data ingestion, processing and visualisation."
+    - "Built and maintained containerised microservices with Docker, deployed to Kubernetes clusters on AWS."
+    - "Implemented logging and dashboard infrastructure with Grafana and Prometheus."
+    - "Maintained and optimised CI/CD pipelines using Jenkins."
+    - "Built customer-facing web applications with Vue 3 and TypeScript."
+    - "Integrated AI-powered backend components via external LLM APIs to support intelligent features in production."
+
+- role: "Quality Assurance Engineer"
+  company: "Davra"
+  period: "May 2022 — Aug 2024"
+  location: "Dublin, Ireland"
+  summary: >-
+    Built automated test frameworks and observability for distributed SaaS and
+    IoT systems, working closely with backend engineers on reliability and
+    production readiness.
+  highlights:
+    - "Designed automated test frameworks for distributed SaaS/IoT systems with Playwright and TypeScript, reaching ~85% automation coverage."
+    - "Performed API, performance and scalability testing, identifying bottlenecks that improved backend performance by ~25%."
+    - "Built observability dashboards and alerts with Prometheus and Grafana."
+    - "Supported multiple concurrent production releases across engineering, product and QA in agile teams."

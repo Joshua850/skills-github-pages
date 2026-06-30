@@ -1,4 +1,4 @@
 ---
-title: Joshuas blog
+layout: home
+title: Joshua's Blog
 ---
-

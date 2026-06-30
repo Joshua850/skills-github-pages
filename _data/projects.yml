@@ -1,0 +1,49 @@
+# Your portfolio projects. Add/edit freely.
+# featured: true  -> also shown on the Home page (keep ~3 featured).
+# Optional fields: demo (live URL), tags (list).
+
+- name: "TCG Swap"
+  description: >-
+    A full-stack trading card platform with 130,000+ cards across English and
+    Spanish printings — and real users. Features collaborative deck building with
+    a pull-request-style suggestion/review workflow, collection valuation,
+    peer-to-peer trading with in-person photo-evidence verification, camera-based
+    binder scanning (OCR via Apple & Google Vision), live multiplayer game tools,
+    and email/push notifications.
+  tags: [Spring Boot, Java 17, PostgreSQL, Vue 3, TypeScript, Cloudflare R2]
+  repo: ""   # private repo — linking the live site instead
+  demo: "https://tcgswap.ie"
+  featured: true
+
+- name: "Playwright E2E Framework"
+  description: >-
+    Automated test frameworks for distributed SaaS and IoT systems using the
+    Page Object Model in Playwright, reaching ~85% automation coverage and
+    validating API behaviour and production readiness alongside backend engineers.
+  tags: [Playwright, TypeScript, Testing]
+  repo: "https://github.com/Joshua850/playwright-example"
+  featured: true
+
+- name: "Terraform on AWS"
+  description: >-
+    Infrastructure as Code that provisions a VPC, subnet, and EC2 instance on
+    AWS — a hands-on demo of standing up cloud infrastructure quickly.
+  tags: [Terraform, AWS, IaC]
+  repo: "https://github.com/Joshua850/terraform-example"
+  featured: false
+
+- name: "CSS Lighthouse"
+  description: >-
+    The oldest working lighthouse in the world, drawn entirely in CSS and
+    rendered with React — a small front-end exercise in restraint and fun.
+  tags: [React, CSS]
+  repo: "https://github.com/Joshua850/react-lighthouse"
+  featured: false
+
+- name: "Command-line Calculator"
+  description: >-
+    A CLI calculator written to keep core programming fundamentals sharp —
+    parsing input and handling arithmetic from the terminal.
+  tags: [JavaScript, CLI]
+  repo: "https://github.com/Joshua850/cmd-line-calculator"
+  featured: false

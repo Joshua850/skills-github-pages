@@ -1,0 +1,11 @@
+# Skills shown on the Home and About pages. Grouped by category.
+- category: Backend
+  items: [TypeScript, Node.js, REST APIs, Microservices, Distributed Systems, Java, Spring Boot]
+- category: Cloud & Infrastructure
+  items: [AWS, Kubernetes, Docker, Linux, CI/CD, Jenkins]
+- category: Data
+  items: [PostgreSQL, MongoDB, Redis]
+- category: Frontend
+  items: [Vue 3, TypeScript, JavaScript, HTML, CSS]
+- category: Observability & QA
+  items: [Prometheus, Grafana, Playwright, API & Performance Testing]

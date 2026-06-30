@@ -1,1 +1,32 @@
-theme: minima
+title: Joshua Cox
+tagline: Full Stack Software Engineer
+description: >-
+  Full stack engineer with 4+ years building and operating large-scale,
+  production IoT applications on cloud-native platforms. TypeScript, Node.js,
+  AWS, Kubernetes and Docker, with end-to-end ownership from development through
+  deployment, monitoring and reliability.
+author: Joshua Cox
+
+url: "https://joshua850.github.io"
+baseurl: "/skills-github-pages"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Social / links (edit these)
+github_username: Joshua850
+
+# Apply the post layout to everything in _posts automatically
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Exclude course scaffolding from the build
+exclude:
+  - README.md
+  - LICENSE
+  - .github
